@@ -1,0 +1,97 @@
+.footer {
+	height: 278px;
+	padding: 60px 0;
+	font-size: 12px;
+	background: $blue;
+	color: rgba(255, 255, 255, .63);
+}
+
+.footer__left {
+	position: relative;
+	float: left;
+	width: 50%;
+	@extend %clearfix;
+}
+
+.logo--footer {
+    position: absolute;
+    top: -10px;
+}
+
+.logo-img {
+	opacity: .63;
+}
+
+.logo-text {
+	position: absolute;
+	left: -9999px;
+}
+
+.company {
+	float: right;
+    margin-right: 70px;
+}
+
+.copyright,
+.contact {
+	margin-bottom: 10px;
+}
+
+.map {
+	color: rgba(255, 255, 255, .63);
+}
+
+.footer__right {
+	float: right;
+	width: 50%;
+}
+
+.footer__right-first{
+	float: left;
+	width: 50%;
+}
+
+.footer__right-second {
+	float: right;
+	width: 50%;
+}
+
+.footer__phone {
+	position: relative;
+	margin-bottom: 50px;
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	&:after {
+		content: "";
+	    position: absolute;
+	    top: 94px;
+	    width: 135px;
+	    border-bottom: 1px solid #596696;
+	}
+}
+
+.footer__counter {
+	margin-bottom: 20px;
+}
+
+.counter-img {
+
+}
+
+.advertising-saits,
+.advertising-map,
+.development-link {
+	display: block;
+	color: rgba(255, 255, 255, .63);
+}
+
+.advertising-saits {
+	margin-bottom: 10px;
+}
+
+.development-link {
+	margin-bottom: 4px;
+}
