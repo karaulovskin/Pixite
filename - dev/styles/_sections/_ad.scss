@@ -1,0 +1,23 @@
+.ad {
+    // align-items: center;
+    // align-content: stretch;
+	height: 180px;
+	width: 100%;
+	padding: 26px 12px;
+	border: 1px solid $grey;
+}
+
+.ad__list {
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ad__link {
+	display: block;
+}
+
+.ad__img {
+	// height: 55px;
+	// width: 200px;
+}

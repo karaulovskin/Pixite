@@ -46,7 +46,6 @@ a {
 input,
 textarea {
 	border: none;
-	padding: 15px 20px;
 	outline: none;
 }
 
@@ -61,9 +60,19 @@ textarea {
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	padding: 0 20px;
 	@extend %clearfix;
 }
 
 .container--footer {
 	padding: 0 28px;
+}
+
+.content {
+	@extend %clearfix;
+}
+
+.main {
+	float: right;
+	width: 880px;
 }

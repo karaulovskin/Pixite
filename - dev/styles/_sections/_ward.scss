@@ -1,0 +1,59 @@
+.ward__list {
+	margin: 0 -7px 44px;
+	font-size: 0;
+	color: #fff;
+}
+
+.ward__item {
+	@include inlineblock(top);
+	width: 33.3%;
+	font-size: 13px;
+}
+
+.ward__block {
+	padding: 0 7px;
+}
+
+.ward__title {
+	padding: 15px;
+}
+
+.ward__title--grey {
+	background: #9da7af;
+}
+
+.ward__title--red {
+	background: $red;
+}
+
+.ward__title--blue {
+	background: #3d519b;
+}
+
+.ward__content {
+	padding: 15px 15px 15px 35px;
+}
+
+.ward__content--grey {
+	background: #9da7af url(/img/ward/bg-ward.png);
+}
+
+.ward__content--red {
+	background: #c33362 url(/img/ward/bg-ward.png);
+}
+
+.ward__content--blue {
+	background: #3d519b url(/img/ward/bg-ward.png);
+}
+
+.ward-services__list {
+	list-style-type: square;
+}
+
+.ward-services__item {
+	margin: 0 0 15px 0;
+}
+
+.ward-services__link {
+	color: #fff;
+}

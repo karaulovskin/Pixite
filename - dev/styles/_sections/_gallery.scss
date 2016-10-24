@@ -1,0 +1,80 @@
+.gallery-tabs__list {
+	font-size: 0;
+}
+
+.gallery-tabs__item {
+	@include inlineblock(top);
+	margin: 0 0 3px 2px;
+	font-size: 17px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.gallery-tabs__link {
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #fff;
+	background: $blue;
+	@include border-radius(5px 5px 0 0);
+}
+
+.gallery-tabs__link--grey {
+	background: $grey;
+}
+
+.gallery__block {
+	position: relative;
+	height: 216px;
+	width: 100%;
+	padding: 30px;
+	overflow: hidden;
+	margin-bottom: 60px;
+	@include border-radius(10px);
+	background: $blue url(/img/ward/bg-ward.png);
+}
+
+.gallery__list {
+	font-size: 0;
+}
+
+.gallery__item {
+	@include inlineblock(top);
+	margin-left: 47px;
+	font-size: 16px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.gallery__link {
+	display: block;
+	color: #fff;
+}
+
+.gallery__img {
+	height: 108px;
+	width: 163px;
+	margin-bottom: 10px;
+	background: $grey;
+}
+
+.gallery__desc {
+	font-size: 12px;
+}
+
+.gallery__go-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 8px 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: $blue;
+	background: $grey;
+
+}

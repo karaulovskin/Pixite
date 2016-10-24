@@ -23,26 +23,146 @@ html
         <![endif]-->
 
         .wrapper
-            .container
+            .maincontent
                 header.header
-                    .header__left
-                    .header__right
-                        .header__top
-                        .header__bottom
+                    .container
+                        .header__left
+                            a.header__map
+                                img(href="#" src="../img/map.png").map-img
+                        .header__right
+                            .header__top
+                                .header__top-left
+                                    .header__title
+                                        .header__title-left
+                                            .header__title-top
+                                                | Южно-Уральская торгово-промышленная палата           
+                                            .header__title-bottom
+                                                | The South Urals Chamber of Commerce and Industry
+                                        .header__title-right
+                                            .header__title-top
+                                                | Челябинская область           
+                                            .header__title-bottom
+                                                | Russia, Chelybinsk Region 
+                                    nav.header__nav
+                                        .search
+                                            form.search__form
+                                                input(name="" type="text" placeholder="Поиск по сайту").search__input
+                                                a(href="#").search__link
+                                        .socials
+                                            ul.socials__list
+                                                li.socials__item
+                                                    a(href="#" title="Вконтакте").socials__link.socials__link--vk
+                                                        | 
+                                                li.socials__item
+                                                    a(href="#" title="Facebook").socials__link.socials__link--fb
+                                                        | 
+                                                li.socials__item
+                                                    a(href="#" title="Twitter").socials__link.socials__link--tw
+                                                        | 
+                                        .contacts
+                                            a(href="#").contacts__link
+                                                | Контакты
+                                        .languages
+                                            ul.languages__list
+                                                li.languages__item
+                                                    a(href="#" title="").languages__link.languages__link--ru
+                                                li.languages__item
+                                                    a(href="#" title="").languages__link.languages__link--en
+                                                li.languages__item
+                                                    a(href="#" title="").languages__link.languages__link--gr
+                                                li.languages__item
+                                                    a(href="#" title="").languages__link.languages__link--ch
 
+                                .header__top-right
+                                    a(href="#").logo
+                                        img(src="../img/logo.png").logo-img
+                                        span.logo-text
+                                            | Южно-Уральская торгово-промышленная палата
+
+                            .header__bottom
+                                ul.meet__list
+                                    li.meet__item
+                                        .meet__left
+                                            img(href="#" src="../img/header/meet-img.png").meet-img
+                                        .meet__right
+                                            .meet__date
+                                                | 12 Января 2016
+                                            .meet__desc
+                                                p
+                                                    | Всероссийский конгресс «Промышленная экология регионов».
+                                                a(href="#").meet__link
+                                                    | Деловые встречи
+                                    li.meet__item
+                                        .meet__left
+                                            img(href="#" src="../img/header/meet-img.png").meet-img
+                                        .meet__right
+                                            .meet__date
+                                                | 12 Января 2016
+                                            .meet__desc
+                                                p
+                                                    | Всероссийский конгресс «Промышленная экология регионов».
+                                                a(href="#").meet__link
+                                                    | Деловые встречи
+                .content
+                    .container
+                        aside.sidebar
+                            nav.sidebar-nav
+                                ul.sidebar-nav__list
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Наши услуги
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Деловая информация
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Инвестиции
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | В помощь предпринимателю
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Действительные члены палаты
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Комитеты ЮУТПП
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Специальные проекты
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | О палате
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | О регионе
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Контакты, реквезиты
+                                    li.sidebar-nav__item
+                                        .sidebar-nav__title
+                                            | Наши проекты
+
+                        .main
+                            include _common/_ward
+                            include _common/_media
+                            include _common/_news
+                            include _common/_projects
+                            include _common/_gallery
+                            include _common/_news
+                            include _common/_ad
         footer.footer
             .container.container--footer
                 .footer_block.footer__left
-                    a(class="logo logo--footer" href="#")
-                        img(class="logo-img" src="../img/logo-footer.png")
+                    a(href="#").logo--footer
+                        img(src="../img/logo-footer.png").logo-img--footer
                         span.logo-text
                             | Южно-Уральская торгово-промышленная палата
                     .company
-                        .copyright
+                        p
                             | © 1992-2014 Южно-Уральская торгово-промышленная палата
-                        .contact
+                        p
                             | 454080, РФ, г. Челябинск, ул. Сони Кривойб, д. 56
-                        a(class="map" href="#")
+                        a(href="#").map
                             | карта местоположения
                 .footer_block.footer__right
                     .footer__right-first
@@ -54,17 +174,17 @@ html
                             p
                                 | email: mail@tpp74.ru
                         .footer__advertising
-                            a(class="advertising-saits" href="#")
+                            a(href="#").advertising-saits
                                 | Реклама на сайте
-                            a(class="advertising-map" href="#")
+                            a(href="#").advertising-map
                                 | Карта сайта
                     .footer__right-second
                         .footer__counter
-                            img(class="counter-img" src="../img/counter.png")
+                            img(src="../img/counter.png").counter-img
                         .footer__development
-                            a(class="development-link" href="#")
+                            a(href="#").development-link
                                 | Разработка: Информационный центр ЮУТПП
-                            a(class="development-link" href="#")
+                            a(href="#").development-link
                                 | Дизайн: "Студия Сайтс"
 
        

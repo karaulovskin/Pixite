@@ -1,0 +1,26 @@
+.projects {
+	margin-bottom: 30px;
+}
+
+.projects__title {
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.projects__top {
+	padding: 22px 0;
+	border-top: 1px solid #dfe0e0;
+	@extend %clearfix;
+}
+
+.projects__left,
+.projects__right {
+	float: left;
+	width: 50%;
+}
+
+.project__img--half {
+	margin: 0 auto;
+	height: 83px;
+	width: 389px;
+}

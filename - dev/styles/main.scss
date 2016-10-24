@@ -3,6 +3,8 @@
 // $black: #333333;
 
 $blue: #2e3f7f;
+$red: #c33362;
+$grey: #9da7af;
 
 /* --------- compass --------- */
 
@@ -24,9 +26,21 @@ $blue: #2e3f7f;
 
 @import "_misc/adjustment";
 
+/* --------- plugins --------- */
+
+@import "plugins/font-awesome";
+
 
 /* --------- sections --------- */
 
+@import "_sections/_header";
+@import "_sections/_sidebar";
+@import "_sections/_ward";
+@import "_sections/_media";
+@import "_sections/_news";
+@import "_sections/_projects";
+@import "_sections/_gallery";
+@import "_sections/_ad";
 @import "_sections/_footer";
 
 
