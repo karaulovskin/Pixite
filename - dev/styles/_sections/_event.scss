@@ -1,0 +1,120 @@
+.event {
+	margin-bottom: 30px;
+}
+
+.event__main-title {
+	margin-bottom: 25px;
+}
+
+.event__list {
+	margin: 0 -6px;
+	font-size: 0;
+}
+
+.event__item {
+	@include inlineblock(top);
+	padding: 0 6px;
+	width: 33.3%;
+	font-size: 12px;
+}
+
+.event__block {
+	border: 1px solid $grey;
+}
+
+.event__title-link {
+	position: relative;
+	display: block;
+	padding: 18px 0 18px 60px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	background: #eff2f5;
+	font-family: "HelveticaNeue-CondensedBold";
+}
+
+.event__title-link--blue {
+	color: $blue;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 17px;
+		left: 20px;
+		height: 40px;
+		width: 40px;
+		background: url(../img/event/icon-calendar.png) no-repeat;
+	}
+}
+
+.event__title-link--red {
+	color: $red;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 17px;
+		left: 20px;
+		height: 40px;
+		width: 40px;
+		background: url(../img/event/icon-ruport.png) no-repeat;
+	}
+}
+
+.event__title-link--grey {
+	color: $grey;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 17px;
+		left: 20px;
+		height: 40px;
+		width: 40px;
+		background: url(../img/event/icon-mark.png) no-repeat;
+	}
+}
+
+.event__content {
+	padding: 25px 20px 35px;
+}
+
+.event__link {
+	display: block;
+	margin-bottom: 10px;
+	color: #000;
+	font-weight: bold;
+}
+
+.event__date {
+	position: relative;
+	margin: 0 0 23px 25px;
+	color: $grey;
+	font-size: 13px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: -25px;
+		height: 20px;
+		width: 20px;
+		background: url(../img/event/icon-watch-blue.png) no-repeat;
+	}
+}
+
+.event__date--red {
+	&:before {
+		background: url(../img/event/icon-watch-red.png) no-repeat;
+	}
+}
+
+.event__pic {
+	height: 145px;
+	width: 218px;
+}
+
+.event__pic-img {
+	display: block;
+	max-width: 100%;
+}

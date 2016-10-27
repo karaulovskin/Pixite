@@ -1,16 +1,34 @@
 .ad {
-    // align-items: center;
-    // align-content: stretch;
+	position: relative;
+	z-index: 1;
 	height: 180px;
 	width: 100%;
 	padding: 26px 12px;
 	border: 1px solid $grey;
 }
 
+.ad--sidebar {
+	width: 253px;
+	border: none;
+
+}
+
 .ad__list {
 	display: flex;
 	justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.ad__list--sidebar {
+	display: block;
+}
+
+.ad__list--sidebar {
+
+}
+
+.ad__item {
+	margin-bottom: 10px;
 }
 
 .ad__link {

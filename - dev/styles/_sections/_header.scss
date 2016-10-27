@@ -1,3 +1,7 @@
+.header {
+	margin-bottom: 20px;
+}
+
 .header__left {
 	float: left;
 	width: 280px;
@@ -27,6 +31,7 @@
 	position: relative;
     margin: 0 0 20px 0;
     text-transform: uppercase;
+    font-family: "HelveticaNeue-CondensedBold";
     @extend %clearfix;
 }
 
@@ -38,15 +43,16 @@
 	&:after {
 		content: "";
 	    position: absolute;
-	    top: 24px;
-	    width: 500px;
-	    border-bottom: 1px solid #4144b0;
+	    top: 32px;
+	    width: 480px;
+	    border-bottom: 3px solid #4144b0;
 	    opacity: .5;
 	}
 }
 
 .header__title-top {
-	font-size: 18px;
+	margin-bottom: 10px;
+	font-size: 21px;
 }
 
 .header__title-bottom {
@@ -63,9 +69,9 @@
 	&:after {
 		content: "";
 	    position: absolute;
-	    top: 24px;
-	    width: 217px;
-	    border-bottom: 1px solid #c33362;
+	    top: 32px;
+	    width: 210px;
+	    border-bottom: 3px solid #c33362;
 	    opacity: .5;
 	}
 }
@@ -78,7 +84,7 @@
 
 .logo {
 	position: absolute;
-	top: 0;
+	top: -30px;
 	right: 0;
 	display: block;
 }
@@ -109,6 +115,11 @@
 .socials {
 	width: 120px;
 	margin: 0 0 0 24px;
+}
+
+.socials--sidebar {
+	float: none;
+	margin: 30px auto;
 }
 
 .socials__list {
@@ -186,7 +197,7 @@
 
 @each $lang in (ru, en, gr, ch) {
 	.languages__link--#{$lang} {
-		background: url('/img/header/#{$lang}.png') 0 0 no-repeat;
+		background: url('../img/header/#{$lang}.png') 0 0 no-repeat;
 		
 		// &:hover {
 		// 	background: url('/img/icons/#{$social}-hover.png') 0 0 no-repeat;
@@ -200,46 +211,52 @@
 	background: url(../img/header/bg-header__bottom.png) no-repeat top center ;
 }
 
-.meet__list {
+.header-meet__list {
 	font-size: 0;
 	// background: url(../img/header/bg-header__bottom.png) no-repeat top center ;
 }
 
-.meet__item {
+.header-meet__item {
 	@include inlineblock(top);
 	width: 50%;
 	font-size: 14px;
 	@extend %clearfix;
 }
 
-.meet__left {
+.header-meet__left {
 	float: left;
+}
+
+.header-meet__pic {
 	height: 68px;
 	width: 100px;
 	background: white;
 }
 
-.meet-img {
-	width: 100%;
+.header-meet__pic-img {
+	display: block;
+	max-width: 100%;
 }
 
-.meet__right {
+.header-meet__right {
 	float: left;
 	width: 250px;
 	margin: 0 0 0 20px;
 }
 
-.meet__date {
+.header-meet__date {
 	margin: 0 0 20px 0;
 	font-size: 13px;
 	text-transform: uppercase;
+	font-family: "HelveticaNeue-CondensedBold";
 }
 
-.meet__desc {
+.header-meet__desc {
 	position: relative;
+	font-weight: bold;
 }
 
-.meet__link {
+.header-meet__link {
 	position: absolute;
 	display: inline-block;
 	bottom: 0;

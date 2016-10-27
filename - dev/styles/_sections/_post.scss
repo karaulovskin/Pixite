@@ -1,0 +1,27 @@
+.post {
+	width: 253px;
+	margin-bottom: 22px;
+	padding: 0 10px;
+}
+
+.post__btn {
+	margin-bottom: 8px;
+	padding: 12px 20px 12px 40px;
+	color: #fff;
+	@include border-radius(15px);
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-CondensedBold";
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.post__btn--red {
+	background: $red;
+}
+
+.post__btn--blue {
+	background: $blue;
+}

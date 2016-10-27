@@ -16,6 +16,10 @@
 
 .ward__title {
 	padding: 15px;
+	border-bottom: 3px solid #fff;
+	@include border-radius(5px 5px 0 0);
+	font-size: 17px;
+	font-family: "HelveticaNeue-CondensedBold";
 }
 
 .ward__title--grey {
@@ -30,24 +34,38 @@
 	background: #3d519b;
 }
 
+.ward__pic {
+	height: 123px;
+	width: 284px;
+}
+
+.ward__pic-img {
+	display: block;
+	max-width: 100%
+}
+
 .ward__content {
+	position: relative;
 	padding: 15px 15px 15px 35px;
+	overflow: hidden;
+	@include border-radius(0 0 5px 5px);
 }
 
 .ward__content--grey {
-	background: #9da7af url(/img/ward/bg-ward.png);
+	background: #9da7af url(../img/ward/bg-ward.png);
 }
 
 .ward__content--red {
-	background: #c33362 url(/img/ward/bg-ward.png);
+	background: #c33362 url(../img/ward/bg-ward.png);
 }
 
 .ward__content--blue {
-	background: #3d519b url(/img/ward/bg-ward.png);
+	background: #3d519b url(../img/ward/bg-ward.png);
 }
 
 .ward-services__list {
 	list-style-type: square;
+	font-size: 13px;
 }
 
 .ward-services__item {
@@ -56,4 +74,29 @@
 
 .ward-services__link {
 	color: #fff;
+}
+
+.ward__link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: block;
+	padding: 5px 10px 5px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: url(../img/ward/bg-link.png)no-repeat;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.ward__link--grey {
+	color: #9da7af;
+}
+
+.ward__link--red {
+	color: #c33362;
+}
+
+.ward__link--blue {
+	color: #3d519b;
 }

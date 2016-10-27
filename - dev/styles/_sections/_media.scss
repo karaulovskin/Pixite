@@ -23,6 +23,8 @@
     font-size: 15px;
     color: #fff;
     background: #a7b2bb;
+    @include border-radius(3px 3px 0 0);
+    font-family: "HelveticaNeue-CondensedBold";
 }
 
 .media__title--blue {
@@ -45,15 +47,15 @@
 	}
 }
 
-.preview__img {
+.preview__pic {
 	float: left;
 	height: 67px;
 	width: 102px;
 }
 
-.preview__pic {
-	height: 100%;
-	width: 100%;
+.preview__pic-img {
+	display: block;
+	max-width: 100%
 }
 
 .preview__content {
@@ -65,6 +67,7 @@
 	display: block;
 	margin: 0 0 4px 0;
 	color: #000;
+	font-weight: bold;
 }
 
 .preview__block {
@@ -72,13 +75,13 @@
 }
 
 .preview__block--all {
-	padding-left: 40px;
+	padding-left: 55px;
 }
 
 .preview__date {
 	float: left;
 	width: 70px;
-	font-size: 12px;
+	font-size: 13px;
     color: #cac9c9;
 }
 
@@ -87,7 +90,8 @@
 	float: left;
 	width: 40px;
 	margin: 0 0 0 20px;
-	font-size: 10px;
+	font-size: 11px;
+	font-family: "Arial";
 
 	&:before {
 		content:"";
@@ -96,7 +100,7 @@
 		left: -16px;
 		height: 10px;
 		width: 12px;
-		background: url(/img/decor/view.png) no-repeat;
+		background: url(../img/decor/view.png) no-repeat;
 	}
 
 	&:after {
@@ -106,7 +110,7 @@
 		left: -20px;
 		height: 10px;
 		width: 12px;
-		background: url(/img/decor/view-line.png) no-repeat;
+		background: url(../img/decor/view-line.png) no-repeat;
 	}
 }
 
@@ -120,6 +124,8 @@
 	text-align: right;
 	text-transform: uppercase;
 	color: $red;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 .video__item {
@@ -142,4 +148,6 @@
 	margin: 8px auto;
 	padding: 0 4px;
 	width: 188px;
+	font-weight: bold;
+	color: #000;
 }

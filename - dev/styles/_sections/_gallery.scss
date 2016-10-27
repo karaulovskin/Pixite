@@ -5,7 +5,6 @@
 .gallery-tabs__item {
 	@include inlineblock(top);
 	margin: 0 0 3px 2px;
-	font-size: 17px;
 
 	&:first-child {
 		margin-left: 0;
@@ -19,6 +18,8 @@
 	color: #fff;
 	background: $blue;
 	@include border-radius(5px 5px 0 0);
+	font-size: 17px;
+	font-family: "HelveticaNeue-CondensedBold";
 }
 
 .gallery-tabs__link--grey {
@@ -33,7 +34,7 @@
 	overflow: hidden;
 	margin-bottom: 60px;
 	@include border-radius(10px);
-	background: $blue url(/img/ward/bg-ward.png);
+	background: $blue url(../img/ward/bg-ward.png);
 }
 
 .gallery__list {
@@ -55,11 +56,16 @@
 	color: #fff;
 }
 
-.gallery__img {
+.gallery__pic {
 	height: 108px;
 	width: 163px;
 	margin-bottom: 10px;
 	background: $grey;
+}
+
+.gallery__pic-img {
+	display: block;
+	max-width: 100%;
 }
 
 .gallery__desc {
@@ -70,11 +76,11 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	padding: 8px 13px;
+	padding: 7px 22px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 10px;
 	color: $blue;
-	background: $grey;
+	background: url(../img/gallery/bg-link.png) no-repeat;
 
 }

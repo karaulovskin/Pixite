@@ -1,5 +1,3 @@
-include _common/_mixins
-
 doctype html
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -28,7 +26,7 @@ html
                     .container
                         .header__left
                             a.header__map
-                                img(href="#" src="../img/map.png").map-img
+                                img(href="#" src="./img/map.png").map-img
                         .header__right
                             .header__top
                                 .header__top-left
@@ -75,86 +73,86 @@ html
 
                                 .header__top-right
                                     a(href="#").logo
-                                        img(src="../img/logo.png").logo-img
+                                        img(src="./img/logo.png").logo-img
                                         span.logo-text
                                             | Южно-Уральская торгово-промышленная палата
 
                             .header__bottom
-                                ul.meet__list
-                                    li.meet__item
-                                        .meet__left
-                                            img(href="#" src="../img/header/meet-img.png").meet-img
-                                        .meet__right
-                                            .meet__date
+                                ul.header-meet__list
+                                    li.header-meet__item
+                                        .header-meet__left
+                                            .header-meet__pic
+                                                img(href="#" src="./img/foto-4.jpg").header-meet__pic-img
+                                        .header-meet__right
+                                            .header-meet__date
                                                 | 12 Января 2016
-                                            .meet__desc
+                                            .header-meet__desc
                                                 p
                                                     | Всероссийский конгресс «Промышленная экология регионов».
-                                                a(href="#").meet__link
+                                                a(href="#").header-meet__link
                                                     | Деловые встречи
-                                    li.meet__item
-                                        .meet__left
-                                            img(href="#" src="../img/header/meet-img.png").meet-img
-                                        .meet__right
-                                            .meet__date
+                                    li.header-meet__item
+                                        .header-meet__left
+                                            .header-meet__pic
+                                                img(href="#" src="./img/foto-4.jpg").header-meet__pic-img
+                                        .header-meet__right
+                                            .header-meet__date
                                                 | 12 Января 2016
-                                            .meet__desc
+                                            .header-meet__desc
                                                 p
                                                     | Всероссийский конгресс «Промышленная экология регионов».
-                                                a(href="#").meet__link
+                                                a(href="#").header-meet__link
                                                     | Деловые встречи
                 .content
                     .container
                         aside.sidebar
-                            nav.sidebar-nav
-                                ul.sidebar-nav__list
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Наши услуги
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Деловая информация
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Инвестиции
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | В помощь предпринимателю
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Действительные члены палаты
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Комитеты ЮУТПП
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Специальные проекты
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | О палате
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | О регионе
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Контакты, реквезиты
-                                    li.sidebar-nav__item
-                                        .sidebar-nav__title
-                                            | Наши проекты
-
+                            include _common/_sidebar
+                            include _common/_post
+                            include _common/_socials
+                            include _common/_print
+                            include _common/_survey
+                            .ad--sidebar
+                                ul.ad__list.ad__list--sidebar
+                                    li.ad__item
+                                        a(href="#").ad__link
+                                            .ad__img
+                                                img(src="./img/sidebar/baner-sb1.png").ad__pic
+                                    li.ad__item
+                                        a(href="#").ad__link
+                                            .ad__img
+                                                img(src="./img/sidebar/baner-sb2.png").ad__pic
+                                    li.ad__item
+                                        a(href="#").ad__link
+                                            .ad__img
+                                                img(src="./img/sidebar/baner-sb3.png").ad__pic
+                                    li.ad__item
+                                        a(href="#").ad__link
+                                            .ad__img
+                                                img(src="./img/sidebar/baner-sb1.png").ad__pic
+                                    li.ad__item
+                                        a(href="#").ad__link
+                                            .ad__img
+                                                img(src="./img/sidebar/baner-sb2.png").ad__pic
+                                    li.ad__item
+                                        a(href="#").ad__link
+                                            .ad__img
+                                                img(src="./img/sidebar/baner-sb3.png").ad__pic
                         .main
                             include _common/_ward
                             include _common/_media
                             include _common/_news
                             include _common/_projects
                             include _common/_gallery
-                            include _common/_news
+                            include _common/_event
+                            include _common/_learning
+                            include _common/_meet
+                            include _common/_offer
                             include _common/_ad
         footer.footer
             .container.container--footer
                 .footer_block.footer__left
                     a(href="#").logo--footer
-                        img(src="../img/logo-footer.png").logo-img--footer
+                        img(src="./img/logo-footer.png").logo-img--footer
                         span.logo-text
                             | Южно-Уральская торгово-промышленная палата
                     .company
@@ -180,7 +178,7 @@ html
                                 | Карта сайта
                     .footer__right-second
                         .footer__counter
-                            img(src="../img/counter.png").counter-img
+                            img(src="./img/counter.png").counter-img
                         .footer__development
                             a(href="#").development-link
                                 | Разработка: Информационный центр ЮУТПП

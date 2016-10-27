@@ -1,0 +1,158 @@
+.meet {
+	margin-bottom: 35px;
+}
+
+.meet-tabs__list {
+	font-size: 0;
+}
+
+.meet-tabs__item {
+	margin-left: 1px;
+	@include inlineblock(top);
+
+	&:first-child {
+	    margin-left: 0;
+	}
+}
+
+.meet-tabs__link {
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: $grey;
+	background: #eff2f5;
+	font-size: 15px;
+	font-family: "HelveticaNeue-CondensedBold";
+	@include border-radius(3px 3px 0 0);
+	border-bottom: 2px solid #eff2f5;
+}
+
+.meet-tabs__link--active {
+	position: relative;
+	color: $red;
+	border: 1px solid #a7b2bb;
+	background: #fff;
+
+	&:before {
+		content: "";
+		position: absolute;
+		margin-left: -5px;
+		bottom: -6px;
+		left: 50%;
+		height: 0;
+		width: 0;
+		border-top: 5px solid #a7b2bb;
+		border-right: 10px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-left: 10px solid transparent;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		margin-left: -5px;
+		bottom: -5px;
+		left: 50%;
+		height: 0;
+		width: 0;
+		border-top: 5px solid #fff;
+		border-right: 10px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-left: 10px solid transparent;
+	}
+}
+
+.meet-block {
+	border: 1px solid #dfe0e0;
+}
+
+.meet__list {
+	font-size: 0;
+}
+
+.meet__item {
+	@include inlineblock(top);
+	width: 50%;
+	padding: 30px 25px 0;
+	font-size: 12px;
+	@extend %clearfix;
+
+	&:last-child {
+		margin-bottom: 0;
+	    padding-bottom: 10px;
+		// border-bottom: 1px solid #dfe0e0;
+	}
+}
+
+.meet__pic {
+	float: left;
+	height: 80px;
+	width: 120px;
+}
+
+.meet__pic-img {
+	display: block;
+	max-width: 100%;
+}
+
+.meet__content {
+	float: right;
+	width: 250px;
+	@extend %clearfix;
+}
+
+.meet__link {
+	display: block;
+	margin: 0 0 4px 0;
+	color: #000;
+	font-weight: bold;
+}
+
+.meet__desc {
+	margin-bottom: 5px;
+}
+
+.meet__block {
+	@extend %clearfix;
+}
+
+.meet__block--all {
+	padding-left: 55px;
+}
+
+.meet__date {
+	float: left;
+    margin-bottom: 5px;
+	width: 70px;
+	font-size: 13px;
+    color: #cac9c9;
+}
+
+.meet__view {
+	position: relative;
+	float: left;
+	width: 40px;
+	margin: 0 0 0 20px;
+	font-size: 11px;
+	font-family: "Arial";
+
+	&:before {
+		content:"";
+		position: absolute;
+		top: 2px;
+		left: -16px;
+		height: 10px;
+		width: 12px;
+		background: url(../img/decor/view.png) no-repeat;
+	}
+
+	&:after {
+		content:"";
+		position: absolute;
+		top: 2px;
+		left: -20px;
+		height: 10px;
+		width: 12px;
+		background: url(../img/decor/view-line.png) no-repeat;
+	}
+}

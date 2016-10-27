@@ -1,0 +1,100 @@
+.survey {
+	margin-bottom: 40px;
+	padding: 24px 10px;
+	width: 253px;
+	border: 1px solid $grey;
+}
+
+.survey__title {
+	position: relative;
+	margin: 0 0 20px 34px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: -30px;
+		height: 30px;
+		width: 24px;
+		background: url(../img/event/icon-ruport.png)no-repeat;
+	}
+}
+
+.survey__form {
+	margin: 0 auto;
+	width: 160px;
+}
+
+.survey__form-title {
+	margin: 0 0 25px 0;
+	font-size: 12px;
+}
+
+.survey-checkbox {
+	position: relative;
+	display: block;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
+.survey-checkbox__input {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    left: -150px;
+}
+
+
+
+.survey-checkbox__fake,
+.survey-checkbox__text {
+	@include inlineblock(middle);
+	cursor: pointer;
+}
+
+.survey-checkbox__input:checked + .survey-checkbox__fake {
+	background: #a5d2fb;
+
+	&::before {
+	    display: block;
+	}
+}
+
+.survey-checkbox__fake {
+	position: relative;
+	height: 14px;
+	width: 14px;
+	border: 1px solid $grey;
+	@include border-radius(50%);
+
+	&:before {
+		content: "";
+		display: none;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		height: 4px;
+		width: 4px;
+		@include border-radius(50%);
+		background: url(../img/decor/check-in.png)no-repeat;
+	}
+}
+
+.survey-checkbox__text {
+	margin-left: 12px;
+	font-size: 12px;
+}
+
+.survey__desc {
+	margin-bottom: 25px;
+}
+
+.survey__btn {
+	padding: 10px;
+	width: 100%;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	background: $grey;
+}
