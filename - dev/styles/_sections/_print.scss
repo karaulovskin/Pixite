@@ -43,13 +43,19 @@
 }
 
 .print__btns {
-	border-top: 1px solid $grey; 
+	padding: 4px 0 0 0;
+	border-top: 1px solid $grey;
+	@extend %clearfix;
 }
 
 .print__btn {
-	display: block;
-	text-align: right;
+	display: inline-block;
+	float: right;
 	text-transform: uppercase;
 	font-size: 10px;
-	color: $red; 
+
+	&:hover {
+		color: #131313;
+		text-decoration: none;
+	}
 }

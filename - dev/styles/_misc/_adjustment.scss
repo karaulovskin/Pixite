@@ -40,7 +40,7 @@ p {
 }
 
 a {
-	// text-decoration: none;
+	@include transition(.3s);
 }
 
 input,
@@ -54,7 +54,7 @@ button {
     position: relative;
     min-height: 100%;
     height: auto !important;
-	min-width: 320px;
+	min-width: 1220px;
 	overflow: hidden;
 }
 
@@ -81,4 +81,28 @@ button {
 	font-size: 16px;
 	text-transform: uppercase;
 	font-family: "HelveticaNeue-CondensedBold";
+}
+
+.red-link {
+	color: $red;
+	@include transition(.3s);
+
+	&:hover {
+		color: #cc4e77;
+		text-decoration: none;
+	} 
+}
+
+.footer-link {
+	color: #92a0dc;
+
+	&:hover {
+		color: #bac5f2;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: #fff;
+		text-decoration: none;
+	}
 }

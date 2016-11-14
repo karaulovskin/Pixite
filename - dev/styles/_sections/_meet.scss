@@ -25,6 +25,16 @@
 	font-family: "HelveticaNeue-CondensedBold";
 	@include border-radius(3px 3px 0 0);
 	border-bottom: 2px solid #eff2f5;
+
+	&:hover {
+		color: #fff;
+		background: #3d519b;
+	}
+
+	&:active {
+		color: #fff;
+		background: #848c92;
+	}
 }
 
 .meet-tabs__link--active {

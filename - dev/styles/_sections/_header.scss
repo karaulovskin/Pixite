@@ -29,7 +29,7 @@
 
 .header__title {
 	position: relative;
-    margin: 0 0 20px 0;
+    margin: 0 0 17px 0;
     text-transform: uppercase;
     font-family: "HelveticaNeue-CondensedBold";
     @extend %clearfix;
@@ -37,13 +37,13 @@
 
 .header__title-left {
 	float: left;
-	width: 500px;
+	width: 512px;
 	color: #4144b0;
 
 	&:after {
 		content: "";
 	    position: absolute;
-	    top: 32px;
+	    top: 30px;
 	    width: 480px;
 	    border-bottom: 3px solid #4144b0;
 	    opacity: .5;
@@ -51,7 +51,7 @@
 }
 
 .header__title-top {
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	font-size: 21px;
 }
 
@@ -63,13 +63,13 @@
 
 .header__title-right {
 	float: left;
-	width: 235px;
+	width: 222px;
 	color: #c33362;
 
 	&:after {
 		content: "";
 	    position: absolute;
-	    top: 32px;
+	    top: 30px;
 	    width: 210px;
 	    border-bottom: 3px solid #c33362;
 	    opacity: .5;
@@ -84,13 +84,13 @@
 
 .logo {
 	position: absolute;
-	top: -30px;
-	right: 0;
+	top: -22px;
+	right: -2px;
 	display: block;
 }
 
 .header__nav {
-	margin: 0 0 20px 0;
+	margin: 0 0 15px 0;
 	font-size: 12px;
 	@extend %clearfix;
 }
@@ -106,7 +106,7 @@
 }
 
 .search__input {
-	padding: 10px 17px;
+	padding: 8px 17px;
 	width: 255px;
 	border: 1px solid #c3ccd4;
 	@include border-radius(20px);
@@ -129,7 +129,7 @@
 
 .socials__item {
 	@include inlineblock(middle);
-	margin: 0 0 0 15px;
+	margin: 0 0 0 12px;
 	font-size: 25px;
 
 	&:first-child {
@@ -142,10 +142,18 @@
 	color: #c3ccd4;
 	font-family: FontAwesome;
 	text-decoration: none;
+	@include transition(.3s);
+
+	&:hover {
+		color: #c33362;
+	}
+
+	&:active {
+		color: #848c92;
+	}
 
 	&:before {
 		display: block;
-
 	}
 }
 
@@ -169,19 +177,24 @@
 
 .contacts__link {
 	display: inline-block;
-	margin: 10px 0 0 0;
-	color: #c3ccd4;
+	margin: 8px 0 3px 0;
+	color: #95a0a9;
+
+	&:hover {
+		color: #b7bdc2;
+		text-decoration: none;
+	}
 }
 
 .languages__list {
 	display: inline-block;
-	margin: 0 0 0 30px;
+	margin: 0 0 0 38px;
 	font-size: 0;
 }
 
 .languages__item {
 	@include inlineblock(middle);
-	margin: 10px 0 0 8px;
+	margin: 8px 0 0 8px;
 	font-size: 16px;
 
 	&:first-child {
@@ -241,11 +254,11 @@
 .header-meet__right {
 	float: left;
 	width: 250px;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 22px;
 }
 
 .header-meet__date {
-	margin: 0 0 20px 0;
+	margin: 0 0 16px 0;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-family: "HelveticaNeue-CondensedBold";
@@ -262,6 +275,16 @@
 	bottom: 0;
 	right: 15px;
 	color: #b6c5fd;
+
+	&:hover {
+		color: #d4ddfd;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: #fff;
+		text-decoration: none;
+	}
 
 	&:before {
 		content: "/";

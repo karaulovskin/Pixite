@@ -97,4 +97,13 @@
 	font-size: 17px;
 	color: #fff;
 	background: $grey;
+	@include transition(.3s);
+
+	&:hover {
+		background: #b6bcc1;
+	}
+
+	&:active {
+		background: #848c92;
+	}
 }

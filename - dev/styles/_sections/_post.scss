@@ -5,13 +5,15 @@
 }
 
 .post__btn {
+	position: relative;
 	margin-bottom: 8px;
-	padding: 12px 20px 12px 40px;
+	padding: 11px 22px 11px 42px;
 	color: #fff;
 	@include border-radius(15px);
 	font-size: 13px;
 	text-transform: uppercase;
 	font-family: "HelveticaNeue-CondensedBold";
+	@include transition(.3s);
 
 	&:last-child {
 		margin-bottom: 0;
@@ -20,8 +22,44 @@
 
 .post__btn--red {
 	background: $red;
+
+	&:hover {
+		background: #cc4e77;
+	}
+
+	&:active {
+		background: #a1204a;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: 14px;
+		width: 30px;
+		height: 30px;
+		background: url(../img/icons/icon-post.png) no-repeat;
+	}
 }
 
 .post__btn--blue {
 	background: $blue;
+
+	&:hover {
+		background: #5266af;
+	}
+
+	&:active {
+		background: #36498d;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 11px;
+		left: 14px;
+		width: 30px;
+		height: 30px;
+		background: url(../img/icons/icon-post-2.png) no-repeat;
+	}
 }

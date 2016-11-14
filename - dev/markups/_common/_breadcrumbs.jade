@@ -1,0 +1,7 @@
+.breadcrumbs
+	.container
+		ul.breadcrumbs__list
+			- var items = ["Промежуточная внутренняя страница", "Текущая внутренняя страница"]
+			each item in items
+				li(class="breadcrumbs__item" + ((item == "Каталог") ? ' active' : ''))
+					a(href="#").breadcrumbs__link= item

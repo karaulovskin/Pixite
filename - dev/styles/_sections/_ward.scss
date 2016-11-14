@@ -87,10 +87,20 @@
 	background: url(../img/ward/bg-link.png)no-repeat;
 	font-size: 10px;
 	font-weight: bold;
+
+	&:hover {
+		color: #000;
+		background: url(../img/ward/bg-link--hover.png)no-repeat;
+	}
+
+	&:active {
+		color: #000;
+		background: url(../img/ward/bg-link--active.png)no-repeat;
+	}
 }
 
 .ward__link--grey {
-	color: #9da7af;
+	color: #6d757c;
 }
 
 .ward__link--red {

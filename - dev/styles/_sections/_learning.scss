@@ -37,11 +37,34 @@
 	background: url(../img/learning/border-dashed.png) bottom repeat-x;
 }
 
+.learning__link {
+	display: inline-block;
+	color: #000;
+
+	&:hover {
+		color: #848c92;
+		text-decoration: underline;
+	}
+
+	&:active {
+		color: #c33362;
+		text-decoration: none;
+	}
+}
+
 .learning__desc {
 	float: left;
 	padding: 15px 12px;
 	width: 580px; 
 	font-size: 13px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:active {
+		text-decoration: none;
+	}
 }
 
 .learning__desc--border {

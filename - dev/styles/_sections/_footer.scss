@@ -3,6 +3,7 @@
 	z-index: 0;
 	bottom: 1px; 
 	height: 278px;
+	min-width: 1220px;
 	padding: 60px 0;
 	font-size: 12px;
 	background: $blue;
@@ -83,10 +84,15 @@
 
 }
 
+.footer__advertising {
+	width: 150px;
+}
+
+
 .advertising-saits,
 .advertising-map,
 .development-link {
-	display: block;
+	display: inline-block;
 	color: rgba(255, 255, 255, .63);
 }
 

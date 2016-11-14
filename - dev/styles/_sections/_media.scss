@@ -116,16 +116,22 @@
 
 .media__btn {
 	border-top: 1px solid #dfe0e0;
+	@extend %clearfix;
 }
 
 .media__link {
-	display: block;
+	display: inline-block;
 	margin: 8px 0 0 0;
-	text-align: right;
+	float: right;
 	text-transform: uppercase;
 	color: $red;
 	font-size: 10px;
 	font-weight: bold;
+
+	&:hover {
+		color: #131313;
+		text-decoration: none;
+	}
 }
 
 .video__item {

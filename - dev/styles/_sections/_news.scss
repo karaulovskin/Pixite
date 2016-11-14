@@ -39,6 +39,16 @@
 	font-weight: bold;
 	color: #000;
 	border-bottom: 1px solid #dfe0e0;
+
+	&:hover {
+		color: #c33362;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: #848c92;
+		text-decoration: none;
+	}
 }
 
 .news__content {

@@ -15,6 +15,9 @@ html
         link(rel='stylesheet' type='text/css' href='css/main.css' media='screen, projection, print')
         script(src='/js/_vendors/modernizr-2.6.2-respond-1.1.0.min.js')
 
+        title
+            block title
+
     body
         <!--[if lt IE 8]>
         <p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
@@ -22,87 +25,7 @@ html
 
         .wrapper
             .maincontent
-                header.header
-                    .container
-                        .header__left
-                            a.header__map
-                                img(href="#" src="./img/map.png").map-img
-                        .header__right
-                            .header__top
-                                .header__top-left
-                                    .header__title
-                                        .header__title-left
-                                            .header__title-top
-                                                | Южно-Уральская торгово-промышленная палата           
-                                            .header__title-bottom
-                                                | The South Urals Chamber of Commerce and Industry
-                                        .header__title-right
-                                            .header__title-top
-                                                | Челябинская область           
-                                            .header__title-bottom
-                                                | Russia, Chelybinsk Region 
-                                    nav.header__nav
-                                        .search
-                                            form.search__form
-                                                input(name="" type="text" placeholder="Поиск по сайту").search__input
-                                                a(href="#").search__link
-                                        .socials
-                                            ul.socials__list
-                                                li.socials__item
-                                                    a(href="#" title="Вконтакте").socials__link.socials__link--vk
-                                                        | 
-                                                li.socials__item
-                                                    a(href="#" title="Facebook").socials__link.socials__link--fb
-                                                        | 
-                                                li.socials__item
-                                                    a(href="#" title="Twitter").socials__link.socials__link--tw
-                                                        | 
-                                        .contacts
-                                            a(href="#").contacts__link
-                                                | Контакты
-                                        .languages
-                                            ul.languages__list
-                                                li.languages__item
-                                                    a(href="#" title="").languages__link.languages__link--ru
-                                                li.languages__item
-                                                    a(href="#" title="").languages__link.languages__link--en
-                                                li.languages__item
-                                                    a(href="#" title="").languages__link.languages__link--gr
-                                                li.languages__item
-                                                    a(href="#" title="").languages__link.languages__link--ch
-
-                                .header__top-right
-                                    a(href="#").logo
-                                        img(src="./img/logo.png").logo-img
-                                        span.logo-text
-                                            | Южно-Уральская торгово-промышленная палата
-
-                            .header__bottom
-                                ul.header-meet__list
-                                    li.header-meet__item
-                                        .header-meet__left
-                                            .header-meet__pic
-                                                img(href="#" src="./img/foto-4.jpg").header-meet__pic-img
-                                        .header-meet__right
-                                            .header-meet__date
-                                                | 12 Января 2016
-                                            .header-meet__desc
-                                                p
-                                                    | Всероссийский конгресс «Промышленная экология регионов».
-                                                a(href="#").header-meet__link
-                                                    | Деловые встречи
-                                    li.header-meet__item
-                                        .header-meet__left
-                                            .header-meet__pic
-                                                img(href="#" src="./img/foto-4.jpg").header-meet__pic-img
-                                        .header-meet__right
-                                            .header-meet__date
-                                                | 12 Января 2016
-                                            .header-meet__desc
-                                                p
-                                                    | Всероссийский конгресс «Промышленная экология регионов».
-                                                a(href="#").header-meet__link
-                                                    | Деловые встречи
+                include _common/_header
                 .content
                     .container
                         aside.sidebar
@@ -111,78 +34,11 @@ html
                             include _common/_socials
                             include _common/_print
                             include _common/_survey
-                            .ad--sidebar
-                                ul.ad__list.ad__list--sidebar
-                                    li.ad__item
-                                        a(href="#").ad__link
-                                            .ad__img
-                                                img(src="./img/sidebar/baner-sb1.png").ad__pic
-                                    li.ad__item
-                                        a(href="#").ad__link
-                                            .ad__img
-                                                img(src="./img/sidebar/baner-sb2.png").ad__pic
-                                    li.ad__item
-                                        a(href="#").ad__link
-                                            .ad__img
-                                                img(src="./img/sidebar/baner-sb3.png").ad__pic
-                                    li.ad__item
-                                        a(href="#").ad__link
-                                            .ad__img
-                                                img(src="./img/sidebar/baner-sb1.png").ad__pic
-                                    li.ad__item
-                                        a(href="#").ad__link
-                                            .ad__img
-                                                img(src="./img/sidebar/baner-sb2.png").ad__pic
-                                    li.ad__item
-                                        a(href="#").ad__link
-                                            .ad__img
-                                                img(src="./img/sidebar/baner-sb3.png").ad__pic
+                            include _common/_ad--sidebar
+                            
                         .main
-                            include _common/_ward
-                            include _common/_media
-                            include _common/_news
-                            include _common/_projects
-                            include _common/_gallery
-                            include _common/_event
-                            include _common/_learning
-                            include _common/_meet
-                            include _common/_offer
-                            include _common/_ad
-        footer.footer
-            .container.container--footer
-                .footer_block.footer__left
-                    a(href="#").logo--footer
-                        img(src="./img/logo-footer.png").logo-img--footer
-                        span.logo-text
-                            | Южно-Уральская торгово-промышленная палата
-                    .company
-                        p
-                            | © 1992-2014 Южно-Уральская торгово-промышленная палата
-                        p
-                            | 454080, РФ, г. Челябинск, ул. Сони Кривойб, д. 56
-                        a(href="#").map
-                            | карта местоположения
-                .footer_block.footer__right
-                    .footer__right-first
-                        .footer__phone
-                            p 
-                                | телефон: +7 (351) 266-1816
-                            p
-                                | факс: +7 (351) 265-4132
-                            p
-                                | email: mail@tpp74.ru
-                        .footer__advertising
-                            a(href="#").advertising-saits
-                                | Реклама на сайте
-                            a(href="#").advertising-map
-                                | Карта сайта
-                    .footer__right-second
-                        .footer__counter
-                            img(src="./img/counter.png").counter-img
-                        .footer__development
-                            a(href="#").development-link
-                                | Разработка: Информационный центр ЮУТПП
-                            a(href="#").development-link
-                                | Дизайн: "Студия Сайтс"
+                            block main
+            
+        include _common/_footer
 
        

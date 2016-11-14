@@ -84,6 +84,16 @@
 	margin-bottom: 10px;
 	color: #000;
 	font-weight: bold;
+
+	&:hover {
+		color: #848c92;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: #c33362;
+		text-decoration: none;
+	}
 }
 
 .event__date {
