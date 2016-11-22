@@ -34,6 +34,11 @@ $grey: #9da7af;
 /* --------- sections --------- */
 
 @import "_sections/_header";
+@import "_sections/_breadcrumbs";
+@import "_sections/_search-filter-btn";
+@import "_sections/_pagination";
+@import "_sections/_materials";
+@import "_sections/_search";
 @import "_sections/_sidebar";
 @import "_sections/_post";
 @import "_sections/_ward";
@@ -48,7 +53,6 @@ $grey: #9da7af;
 @import "_sections/_print";
 @import "_sections/_survey";
 @import "_sections/_footer";
-
 
 
 

@@ -50,6 +50,45 @@ button {
 	outline: none;
 }
 
+
+/* --------- placeholder --------- */
+
+::-webkit-input-placeholder {
+	text-transform: uppercase;
+	font-size: 12px;
+
+	&:after {
+
+	}
+}
+
+::-moz-placeholder          {
+	text-transform: uppercase;
+	font-size: 12px;
+
+	&:after {
+
+	}
+}
+
+:-moz-placeholder           {
+	text-transform: uppercase;
+	font-size: 12px;
+
+	&:after {
+
+	}
+}
+
+:-ms-input-placeholder      {
+	text-transform: uppercase;
+	font-size: 12px;
+
+	&:after {
+
+	}
+}
+
 .wrapper {
     position: relative;
     min-height: 100%;

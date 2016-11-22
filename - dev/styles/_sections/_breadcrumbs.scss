@@ -1,0 +1,73 @@
+.breadcrumbs {
+	margin-bottom: 26px;
+    padding-bottom: 6px;
+	border-bottom: 1px solid #d0d2d3;
+}
+
+.breadcrumbs__main-link,
+.breadcrumbs__list {
+	@include inlineblock(middle);
+}
+
+.breadcrumbs__main-link {
+	position: relative;
+	width: 16px;
+	height: 20px;
+	@include transition(.3s);
+	
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0px;
+		width: 20px;
+		height: 20px;
+		background: url(../img/icons/icon-bredcram.png) no-repeat;
+	}
+
+	&:hover {
+		&:before {
+			background: url(../img/icons/icon-bredcram--hover.png) no-repeat;
+		}	
+	}
+
+	&:active {
+		&:before {
+			background: url(../img/icons/icon-bredcram--active.png) no-repeat;
+		}	
+	}
+
+}
+
+.breadcrumbs__list {
+	font-size: 0;
+}
+
+.breadcrumbs__item {
+	position: relative;
+	@include inlineblock(middle);
+	margin-left: 20px;
+	font-size: 14px;
+
+
+	&:before {
+		content: '/';
+		position: absolute;
+		top: 0;
+		left: -10px;
+		@include inlineblock(middle);
+	}
+
+	&.breadcrumbs__item--current {
+		.breadcrumbs__link {
+			color: #6f767c;
+			text-decoration: none;
+		}
+	}
+}
+
+.breadcrumbs__link {
+	@include inlineblock(middle);
+	font-size: 11px;
+	color: #a80339;
+}

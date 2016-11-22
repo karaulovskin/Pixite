@@ -1,0 +1,26 @@
+.search-btn__input {
+	position: relative;
+	padding: 6px 20px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		background: url(../img/check-search-btn.png);
+	}
+}
+
+.search-btn__input--grey {
+	background: #9da7af;
+}
+
+.search-btn__input--blue {
+	background: #304181;
+}

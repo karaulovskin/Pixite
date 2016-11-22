@@ -1,0 +1,90 @@
+.pagination {
+	float: right;
+}
+
+.pagination__list {
+	@include inlineblock(middle);
+	font-size: 0;
+}
+
+.pagination__item {
+	position: relative;
+	@include inlineblock(middle);
+	margin-left: 2px;
+	width: 32px;
+	height: 25px;
+	font-size: 16px;
+	background: #ebebeb;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.pagination__item--current {
+	background: #848484;
+	
+	.pagination__link {
+		color: #fff;
+	}
+
+}
+
+.pagination__link {
+	display: block;
+	position: absolute;
+	top: 4px;
+	right: 13px;
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.pagination__control {
+	@include inlineblock(middle);
+	width: 6px;
+	height: 11px;
+	@include transition(.3s);
+}
+
+.pagination__control--left {
+	position: relative;
+	margin-right: 15px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 6px;
+		height: 11px;
+		background: url(../img/decor/control-left.png)no-repeat;
+	}
+
+	&:hover {
+		&:before {
+			background: url(../img/decor/control-left--blue.png)no-repeat;
+		}
+	}
+}
+
+.pagination__control--right {
+	position: relative;
+	margin-left: 15px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 6px;
+		height: 11px;
+		background: url(../img/decor/control-right.png)no-repeat;
+	}
+
+	&:hover {
+		&:before {
+			background: url(../img/decor/control-right--blue.png)no-repeat;
+		}
+	}
+}
