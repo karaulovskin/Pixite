@@ -1,0 +1,22 @@
+.feedback
+	.feedback__title.title
+		| Обратная связь
+	.feedback__desc
+		p Описание как правильно заполнить форму или другой текст. Международный промышленный форум, "Реконструкция промышленных предприятий
+
+	form.feedback__form
+		.feedback__wrapp
+			.feedback__label-block.form__label
+				<label for="message" class="feedback__label">Сообщение получит</label>
+				<label for="name" class="feedback__label">Ваше имя и фамилия</label>
+				<label for="email" class="feedback__label">Электронный ящик</label>
+				<label for="phone" class="feedback__label">Телефон/факс</label>
+				<label for="text" class="feedback__label">Текст сообщения</label>
+			.feedback__input-block.form__input
+				<input id="message" type="text" class="feedback__input" placeholder="">
+				<input id="name" type="text" class="feedback__input" placeholder="">
+				<input id="email" type="text" class="feedback__input" placeholder="">
+				<input id="phone" type="text" class="feedback__input" placeholder="">
+				<textarea id="text" type="text" class="feedback__textarea" placeholder=""></textarea>
+		.feedback__btns
+			input(value="Отправить сообщение" type="submit").feedback__btn
