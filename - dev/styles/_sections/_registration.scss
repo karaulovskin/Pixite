@@ -1,0 +1,8 @@
+.registration__checkbox {
+	@include inlineblock(middle);
+	width: 115px;
+}
+
+.registration-checkbox__text {
+	font-weight: bold;
+}

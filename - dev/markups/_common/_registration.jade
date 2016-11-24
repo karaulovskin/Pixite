@@ -1,0 +1,29 @@
+.feedback
+	.feedback__title.title
+		| Регистрация участника
+	.feedback__desc
+		p Описание как правильно заполнить форму или другой текст. Международный промышленный форум, "Реконструкция промышленных предприятий
+
+	form.feedback__form
+		.feedback__wrapp
+			.feedback__label-block.form__label
+				<label for="name" class="feedback__label">Ваше имя и фамилия</label>
+				<label for="email" class="feedback__label">Электронный ящик</label>
+				<label for="phone" class="feedback__label">Телефон/факс</label>
+				<label for="text" class="feedback__label">Укажите ваш пол</label>
+			.feedback__input-block.form__input
+				<input id="name" type="text" class="feedback__input" placeholder="">
+				<input id="email" type="text" class="feedback__input" placeholder="">
+				<input id="phone" type="text" class="feedback__input" placeholder="">
+				label.survey-checkbox.registration__checkbox
+					input(type="radio").survey-checkbox__input
+					.survey-checkbox__fake
+					span.survey-checkbox__text.registration-checkbox__text
+						| Мужской
+				label.survey-checkbox.registration__checkbox
+					input(type="radio").survey-checkbox__input
+					.survey-checkbox__fake
+					span.survey-checkbox__text.registration-checkbox__text
+						| Женский
+		.feedback__btns
+			input(value="Отправить заявку" type="submit").feedback__btn
