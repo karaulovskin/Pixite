@@ -58,12 +58,18 @@
 		left: 0;
 		width: 6px;
 		height: 11px;
-		background: url(../img/decor/control-left.png)no-repeat;
+		background: url(../img/decor/control-pag.png)no-repeat 0px 0px;
 	}
 
 	&:hover {
 		&:before {
-			background: url(../img/decor/control-left--blue.png)no-repeat;
+			background: url(../img/decor/control-pag--hover.png)no-repeat 0px 0px;
+		}
+	}
+
+	&:active {
+		&:before {
+			background: url(../img/decor/control-pag--active.png)no-repeat 0px 0px;
 		}
 	}
 }
@@ -79,12 +85,18 @@
 		left: 0;
 		width: 6px;
 		height: 11px;
-		background: url(../img/decor/control-right.png)no-repeat;
+		background: url(../img/decor/control-pag.png)no-repeat -167px 0px;
 	}
 
 	&:hover {
 		&:before {
-			background: url(../img/decor/control-right--blue.png)no-repeat;
+			background: url(../img/decor/control-pag--hover.png)no-repeat -167px 0px;
+		}
+	}
+
+	&:active {
+		&:before {
+			background: url(../img/decor/control-pag--active.png)no-repeat -167px 0px;
 		}
 	}
 }
