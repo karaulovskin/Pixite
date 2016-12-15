@@ -7,16 +7,22 @@
 	form.feedback__form
 		.feedback__wrapp
 			.feedback__label-block.form__label
-				<label for="message" class="feedback__label">Сообщение получит</label>
-				<label for="name" class="feedback__label">Ваше имя и фамилия</label>
-				<label for="email" class="feedback__label">Электронный ящик</label>
-				<label for="phone" class="feedback__label">Телефон/факс</label>
-				<label for="text" class="feedback__label">Текст сообщения</label>
+				label(for="message").feedback__label
+					span.feedback__label-text Сообщение получит
+				label(for="name" ).feedback__label
+					span.feedback__label-text.feedback__label-text--required Ваше имя и фамилия
+				label(for="email" ).feedback__label
+					span.feedback__label-text Электронный ящик
+				label(for="phone" ).feedback__label
+					span.feedback__label-text.feedback__label-text--required Телефон/факс
+				label(for="text" ).feedback__label
+					span.feedback__label-text.feedback__label-text--required Текст сообщения
 			.feedback__input-block.form__input
-				<input id="message" type="text" class="feedback__input" placeholder="">
-				<input id="name" type="text" class="feedback__input" placeholder="">
-				<input id="email" type="text" class="feedback__input" placeholder="">
-				<input id="phone" type="text" class="feedback__input" placeholder="">
-				<textarea id="text" type="text" class="feedback__textarea" placeholder=""></textarea>
+				select(id="message" type="text" placeholder="").feedback__input.feedback__input--gradient
+					option Морозова Елена Юрьевна
+				input(id="name" type="text" placeholder="").feedback__input
+				input(id="email" type="text" placeholder="").feedback__input
+				input(id="phone" type="text" placeholder="").feedback__input
+				textarea(id="text" type="text" placeholder="").feedback__textarea
 		.feedback__btns
-			input(value="Отправить сообщение" type="submit").feedback__btn
+			input(value="Отправить сообщение" type="submit").feedback__btn.form__btn

@@ -10,21 +10,24 @@
 }
 
 .search-main__form {
-	border: 1px solid #d0d2d3;
+	// border: 1px solid #d0d2d3;
+	font-size: 0;
 	@extend %clearfix;
 }
 
 .search-main__form-input {
 	float: left;
 	width: 87%;
-	padding: 6px 6px;
+	padding: 7px 6px;
 	font-size: 15px;
+	border: 1px solid #d0d2d3;
+	background: linear-gradient(to top, #ffffff 50%, #eff2f5 100%);
 }
 
 .search-main__form-submit {
 	position: relative;
 	float: right;
-	padding: 9px 20px 9px 47px;
+	padding: 10px 20px 9px 47px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #fff;

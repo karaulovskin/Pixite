@@ -1,5 +1,5 @@
 header.header
-    .container
+    .container.container--main
         .header__left
             a.header__map
                 img(href="#" src="./img/map.png").map-img
@@ -18,10 +18,10 @@ header.header
                             .header__title-bottom
                                 | Russia, Chelybinsk Region 
                     nav.header__nav
-                        .search
-                            form.search__form
-                                input(name="" type="text" placeholder="Поиск по сайту").search__input
-                                a(href="#").search__link
+                        .header-search
+                            form.header-search__form
+                                input(name="" type="text" placeholder="Поиск по сайту").header-search__input
+                                a(href="#").header-search__link
                         .socials
                             ul.socials__list
                                 li.socials__item
@@ -48,7 +48,7 @@ header.header
                                     a(href="#" title="").languages__link.languages__link--ch
 
                 .header__top-right
-                    a(href="#").logo
+                    a(href="index.html").logo
                         img(src="./img/logo.png").logo-img
                         span.logo-text
                             | Южно-Уральская торгово-промышленная палата
@@ -65,6 +65,7 @@ header.header
                             .header-meet__desc
                                 p
                                     | Всероссийский конгресс «Промышленная экология регионов».
+                            .header-meet__btns
                                 a(href="#").header-meet__link
                                     | Деловые встречи
                     li.header-meet__item
@@ -77,5 +78,6 @@ header.header
                             .header-meet__desc
                                 p
                                     | Всероссийский конгресс «Промышленная экология регионов».
+                            .header-meet__btns
                                 a(href="#").header-meet__link
                                     | Деловые встречи

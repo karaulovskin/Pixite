@@ -7,23 +7,25 @@
 	form.feedback__form
 		.feedback__wrapp
 			.feedback__label-block.form__label
-				<label for="name" class="feedback__label">Ваше имя и фамилия</label>
-				<label for="email" class="feedback__label">Электронный ящик</label>
-				<label for="phone" class="feedback__label">Телефон/факс</label>
-				<label for="text" class="feedback__label">Укажите ваш пол</label>
+				label(for="name").feedback__label
+					span.feedback__label-text.feedback__label-text--required Ваше имя и фамилия
+				label(for="email").feedback__label
+					span.feedback__label-text Электронный ящик
+				label(for="phone").feedback__label
+					span.feedback__label-text.feedback__label-text--required Телефон/факс 
+				label(for="text").feedback__label
+					span.feedback__label-text.feedback__label-text--required Укажите ваш пол
 			.feedback__input-block.form__input
 				<input id="name" type="text" class="feedback__input" placeholder="">
 				<input id="email" type="text" class="feedback__input" placeholder="">
 				<input id="phone" type="text" class="feedback__input" placeholder="">
-				label.survey-checkbox.registration__checkbox
-					input(type="radio").survey-checkbox__input
-					.survey-checkbox__fake
-					span.survey-checkbox__text.registration-checkbox__text
-						| Мужской
-				label.survey-checkbox.registration__checkbox
-					input(type="radio").survey-checkbox__input
-					.survey-checkbox__fake
-					span.survey-checkbox__text.registration-checkbox__text
-						| Женский
+				label.checkbox.registration__checkbox
+					input(type="checkbox").checkbox__input
+					.checkbox__fake--registration.checkbox__fake--radio
+					span.registration-checkbox__text Мужской
+				label.checkbox.registration__checkbox
+					input(type="checkbox").checkbox__input
+					.checkbox__fake--registration.checkbox__fake--radio
+					span.registration-checkbox__text Женский
 		.feedback__btns
 			input(value="Отправить заявку" type="submit").feedback__btn

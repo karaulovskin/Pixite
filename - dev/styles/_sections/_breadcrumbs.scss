@@ -70,4 +70,8 @@
 	@include inlineblock(middle);
 	font-size: 11px;
 	color: #a80339;
+
+	&:hover {
+		text-decoration: none;
+	}
 }

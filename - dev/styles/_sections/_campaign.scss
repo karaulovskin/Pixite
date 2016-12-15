@@ -1,0 +1,86 @@
+.campaign__title {
+	margin-left: 60px;
+}
+
+.campaign__content {
+	margin-left: 60px;
+}
+
+.campaign__logo {
+	margin-bottom: 30px;
+}
+
+.campaign__list {
+	border-top: 1px solid #9da7af;
+}
+
+.campaign__item {
+	padding: 8px 20px;
+	font-size: 0;
+	@extend %clearfix;
+
+	&:nth-child(odd) {
+	    background: #eff2f5;
+	   } 
+
+   &:nth-child(even) {
+	    background: #fff;
+   } 
+}
+
+.campaign__left,
+.campaign__right {
+	font-size: 13px;
+	@include inlineblock(middle);
+}
+
+.campaign__left {
+	font-weight: bold;
+	width: 23%;
+}
+
+.campaign__right {
+	width: 77%;
+}
+
+.campaign-desc__item {
+	margin-bottom: 8px;
+    padding: 18px 20px;
+	font-size: 0;
+	background: #fff2f6;
+	@extend %clearfix;
+}
+
+.campaign-activity__item {
+	font-weight: bold;
+
+	span {
+		display: block;
+		margin-bottom: 16px;
+	}
+}
+
+.campaign-subactivity__list {
+	margin-left: 34px;
+	font-weight: normal;
+}
+
+.campaign-subactivity__item {
+	margin-bottom: 16px;
+}
+
+.campaign-product__item {
+	position: relative;
+	margin-bottom: 16px;
+	margin-left: 20px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 5;
+		left: -20px;
+		width: 7px;
+		height: 7px;
+		background: #9da7af;
+	}
+}

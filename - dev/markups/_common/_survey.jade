@@ -4,21 +4,18 @@
 	form.survey__form
 		.survey__form-title
 			| Собстенное унитарное государство случайно?
-		label.survey-checkbox
-			input(type="radio").survey-checkbox__input.survey-checkbox__input--checked
-			.survey-checkbox__fake
-			span.survey-checkbox__text
-				| Да
-		label.survey-checkbox
-			input(type="radio").survey-checkbox__input
-			.survey-checkbox__fake
-			span.survey-checkbox__text
-				| Нет
-		label.survey-checkbox
-			input(type="radio").survey-checkbox__input
-			.survey-checkbox__fake
-			span.survey-checkbox__text
-				| Возможно
+		label.checkbox.survey__checkbox
+			input(type="checkbox").checkbox__input
+			.checkbox__fake--survey.checkbox__fake--radio
+			span.checkbox__text--survey Да
+		label.checkbox.survey__checkbox
+			input(type="checkbox").checkbox__input
+			.checkbox__fake--survey.checkbox__fake--radio
+			span.checkbox__text--survey Нет
+		label.checkbox.survey__checkbox
+			input(type="checkbox").checkbox__input
+			.checkbox__fake--survey.checkbox__fake--radio
+			span.checkbox__text--survey Возможна
 		.survey__desc
 			| Карл Маркс исходил из того, что механизм власти определяет
 		button(type="submit").survey__btn

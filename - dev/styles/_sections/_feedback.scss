@@ -31,7 +31,19 @@
 	padding: 7px 0;
     margin-bottom: 7px;
 	font-weight: bold;
+}
 
+.feedback__label-text--required {
+	position: relative;
+	
+	&:after {
+		content: "*";
+		position: absolute;
+		top: 0;
+		right: -8px;
+		color: #c33362;
+
+	}
 }
 
 .feedback__input {
@@ -40,6 +52,11 @@
 	padding: 8px 10px;
 	border: 1px solid #d0d2d3;
 }
+
+.feedback__input--gradient {
+    background: linear-gradient(to top, #ffffff 50%, #eff2f5 100%);
+}
+
 
 .feedback__textarea {
 	width: 100%;

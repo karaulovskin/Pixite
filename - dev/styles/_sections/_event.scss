@@ -76,7 +76,12 @@
 }
 
 .event__content {
+    min-height: 300px;
 	padding: 25px 20px 35px;
+}
+
+.event-preview__item {
+	margin-bottom: 20px;
 }
 
 .event__link {
@@ -114,6 +119,7 @@
 }
 
 .event__date--red {
+	margin-bottom: 0;
 	&:before {
 		background: url(../img/event/icon-watch-red.png) no-repeat;
 	}

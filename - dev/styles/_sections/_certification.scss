@@ -1,0 +1,62 @@
+.certification {
+	margin-bottom: 48px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dfe0e0;
+}
+
+
+.certification__list {
+	margin: 0 -15px;
+	font-size: 0;
+}
+
+.certification__item {
+	position: relative;
+	@include inlineblock(top);
+	margin-bottom: 34px;
+	padding: 0 30px 0 15px;
+	width: 25%;
+	font-size: 12px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 2px;
+		right: 15px;
+		width: 1px;
+		height: 66%;
+		background: url(../img/decor/certification-border.png)right repeat-y;
+	}
+}
+
+.certification__link {
+	display: inline-block;
+	margin-bottom: 14px;
+	color: #000;
+	font-weight: bold;
+
+	&:hover {
+		color: #a80339;
+		text-decoration: none;
+	}
+}
+
+.certification__pic {
+	position: relative;
+	width: 172px;
+	height: 77px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(../img/foto-certification.jpg); 
+}
+
+.certification__pic-fake {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+
+.certification__desc {
+	color: #6f767c;
+}

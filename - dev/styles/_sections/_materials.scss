@@ -7,6 +7,10 @@
 	margin-bottom: 26px;
 	border-bottom: 1px solid #d0d2d3;
 	@extend %clearfix;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .materials__link {
